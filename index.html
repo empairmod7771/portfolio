@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Портфолио · монтаж видео</title>
+<meta name="description" content="Портфолио видеомонтажёра: Shorts, Reels и длинные ролики для YouTube.">
+<meta name="theme-color" content="#0d0c0b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23d23d2e'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="top">
+  <a class="brand" href="#top"><span class="brand-dot"></span><b data-site="name"></b><small data-site="role"></small></a>
+  <nav class="nav">
+    <a href="#works">Работы</a>
+    <a href="#services">Что делаю</a>
+    <a href="#process">Как работаем</a>
+    <a class="nav-cta" href="#contact">Связаться</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <span class="label" data-site="label"></span>
+      <h1 class="headline" data-site="headline"></h1>
+      <p class="intro" data-site="intro"></p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="#works">Смотреть работы</a>
+        <a class="btn btn-ghost" href="#contact">Обсудить проект</a>
+      </div>
+      <ul class="stats" id="stats"></ul>
+    </div>
+    <button class="hero-reel" id="heroReel" type="button" aria-label="Смотреть ролик">
+      <span class="vf vf-tl"></span><span class="vf vf-tr"></span><span class="vf vf-bl"></span><span class="vf vf-br"></span>
+      <video muted loop playsinline preload="auto"></video>
+      <span class="rec"><i></i>REC</span>
+      <span class="hero-play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+      <span class="hero-cap"></span>
+    </button>
+  </section>
+
+  <section class="works wrap" id="works">
+    <div class="sec-head">
+      <span class="label">01 · Портфолио</span>
+      <h2>Мои работы</h2>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+
+    <div class="group" data-group="long">
+      <h3 class="group-title">Длинные ролики <span class="count"></span></h3>
+      <div class="grid grid-long"></div>
+    </div>
+    <div class="group" data-group="short">
+      <h3 class="group-title">Shorts и Reels <span class="count"></span></h3>
+      <div class="grid grid-short"></div>
+    </div>
+    <div class="group" data-group="photo">
+      <h3 class="group-title">Фото и обложки <span class="count"></span></h3>
+      <div class="grid grid-photo"></div>
+    </div>
+    <p class="empty" id="empty" hidden>Здесь пока пусто. Положите видео или фото в папку «Добавить» и запустите ДОБАВИТЬ_РАБОТЫ.cmd.</p>
+  </section>
+
+  <section class="paper" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">02 · Что я делаю</span>
+        <h2>Из сырого исходника — в готовый ролик</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="num">1</span><h4>Чищу материал</h4><p>Вырезаю паузы, вдохи, оговорки и дубли. Остаётся только то, что держит внимание.</p></li>
+        <li><span class="num">2</span><h4>Задаю темп</h4><p>Картинка меняется каждые 2–3 секунды, камера наезжает на важных словах — кадр не стоит на месте.</p></li>
+        <li><span class="num">3</span><h4>Графика и субтитры</h4><p>Субтитры по словам для Shorts, заголовки, цифры, схемы и анимированные вставки под смысл.</p></li>
+        <li><span class="num">4</span><h4>Звук и цвет</h4><p>Чистый голос, музыка под настроение, тихие звуки на движения, ровная громкость и цветокоррекция.</p></li>
+      </ol>
+      <div class="formats">
+        <div><b>Shorts / Reels / TikTok</b><span>9:16, до 60 секунд, субтитры, крючок в первые секунды</span></div>
+        <div><b>Ролики для YouTube</b><span>16:9, главы, графика на весь экран, музыка по сценам</span></div>
+        <div><b>Нарезки из длинного</b><span>Нахожу сильные моменты в большом видео и делаю из них Shorts</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process wrap" id="process">
+    <div class="sec-head">
+      <span class="label">03 · Как работаем</span>
+      <h2>Четыре шага</h2>
+    </div>
+    <div class="flow">
+      <div><i>01</i><h4>Вы присылаете исходник</h4><p>Ссылка на облако и пара слов: о чём ролик, для какой площадки, есть ли пример, как хочется.</p></div>
+      <div><i>02</i><h4>Я называю срок и цену</h4><p>Смотрю материал и отвечаю честно, сколько это займёт.</p></div>
+      <div><i>03</i><h4>Черновик и правки</h4><p>Присылаю первую версию, вы пишете, что поменять, я правлю.</p></div>
+      <div><i>04</i><h4>Готовый файл</h4><p>Отдаю видео в нужном формате, готовое к загрузке.</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-in">
+      <span class="label">04 · Связаться</span>
+      <h2 data-site="contactTitle"></h2>
+      <p data-site="contactText"></p>
+      <div class="contact-links" id="contactLinks"></div>
+      <p class="contact-hint" id="contactHint" hidden>Контакты пока не заполнены: откройте файл <code>data/site.js</code> и впишите Telegram, почту или телефон.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <span><b data-site="name"></b> · <span data-site="role"></span></span>
+  <span id="year"></span>
+</footer>
+
+<div class="lb" id="lb" hidden>
+  <div class="lb-bg" data-close></div>
+  <div class="lb-box" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+    <button class="lb-x" data-close type="button" aria-label="Закрыть">×</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Предыдущая работа">‹</button>
+    <button class="lb-nav lb-next" type="button" aria-label="Следующая работа">›</button>
+    <div class="lb-media" id="lbMedia"></div>
+    <div class="lb-info">
+      <span class="label" id="lbKind"></span>
+      <h3 id="lbTitle"></h3>
+      <p id="lbDesc"></p>
+      <ul class="lb-tags" id="lbTags"></ul>
+      <a class="btn btn-red lb-cta" href="#contact" data-close>Хочу так же</a>
+    </div>
+  </div>
+</div>
+
+<script src="data/site.js"></script>
+<script src="data/works.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
