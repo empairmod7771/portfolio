@@ -55,6 +55,7 @@ h1,h2,h3,h4{margin:0}
 .headline .ch{display:inline-block;opacity:0;transform:translateY(.4em);filter:blur(8px);animation:chIn .5s cubic-bezier(.2,.8,.2,1) forwards}
 .headline .accent{color:var(--red);text-shadow:0 0 40px rgba(210,61,46,.45)}
 @keyframes chIn{to{opacity:1;transform:none;filter:none}}
+.hero-text{min-width:0}
 .intro{font-size:clamp(16px,1.5vw,19px);color:var(--soft);max-width:600px;margin:0 0 30px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
 .stats{list-style:none;padding:0;margin:40px 0 0;display:flex;flex-wrap:wrap;gap:12px 36px}
@@ -196,7 +197,7 @@ body.lock{overflow:hidden}
 .reveal.in{opacity:1;transform:none;filter:none}
 
 @media (max-width:900px){
-  .hero{grid-template-columns:1fr}
+  .hero{grid-template-columns:minmax(0,1fr)}
   .hero-reel{width:min(72%,300px);transform:none;margin-top:10px}
   .steps{grid-template-columns:repeat(2,1fr);gap:36px 22px}
   .steps::before{display:none}
