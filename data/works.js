@@ -4,6 +4,44 @@
 // Формат JSON: строки в двойных кавычках, запятые между полями.
 window.WORKS = [
   {
+    "id": "11-25-mask-posle-tretego-provala",
+    "title": "Маск после третьего провала",
+    "desc": "",
+    "date": "2026-11-25",
+    "type": "short",
+    "video": "media/11-25-mask-posle-tretego-provala/video.mp4",
+    "poster": "media/11-25-mask-posle-tretego-provala/poster.jpg",
+    "preview": "media/11-25-mask-posle-tretego-provala/preview.mp4",
+    "duration": 48,
+    "w": 1080,
+    "h": 1920,
+    "tags": [
+      "Субтитры",
+      "Наезды камеры",
+      "Графика",
+      "Звук"
+    ]
+  },
+  {
+    "id": "11-25-mask-ne-nachinal-s-nulya",
+    "title": "Маск не начинал с нуля",
+    "desc": "",
+    "date": "2026-11-25",
+    "type": "long",
+    "video": "media/11-25-mask-ne-nachinal-s-nulya/video.mp4",
+    "poster": "media/11-25-mask-ne-nachinal-s-nulya/poster.jpg",
+    "preview": "media/11-25-mask-ne-nachinal-s-nulya/preview.mp4",
+    "duration": 655,
+    "w": 1920,
+    "h": 1080,
+    "tags": [
+      "Сюжет и темп",
+      "Графика на весь экран",
+      "Цвет",
+      "Музыка и звук"
+    ]
+  },
+  {
     "id": "11-24-30-podpischikov-i-bezumnyj-proekt-na-god",
     "title": "30 подписчиков и безумный проект на год",
     "desc": "",

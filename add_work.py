@@ -145,6 +145,19 @@ def add(src, works, move=False):
     if ext not in VIDEO_EXT | PHOTO_EXT:
         return False
     title, desc = title_from(src)
+    if ext in VIDEO_EXT:
+        try:
+            dur = probe(src)[2]
+        except Exception:
+            dur = -1
+        same = [w for w in works if abs(w.get("duration", -9) - dur) <= 1
+                and (w["title"].lower() == title.lower() or w.get("date") == date_from(src))]
+        if same:
+            print(f"→ {src.name}: уже есть на сайте («{same[0]['title']}»), пропускаю")
+            if move:
+                DONE.mkdir(exist_ok=True)
+                shutil.move(str(src), str(DONE / src.name))
+            return False
     wid = base = slugify(date_from(src)[5:] + "-" + title)
     ids = {w["id"] for w in works}
     n = 2
@@ -193,7 +206,15 @@ def main():
     added = sum(add(f, works, move) for f in files if f.suffix.lower() in VIDEO_EXT | PHOTO_EXT)
     print(f"\nДобавлено работ: {added}. Всего на сайте: {len(works)}.")
     if not added and not args:
-        print("Папка «Добавить» пуста — положите туда видео или фото и запустите снова.")
+        print("Новых работ нет: папка «Добавить» пуста или там только то, что уже есть на сайте.")
+    if added and not args:
+        print("\nПока новые работы есть только на этом компьютере.")
+        ans = input("Выложить их на сайт в интернете сейчас? Введите 1 (да) или 2 (нет) и нажмите Enter: ").strip()
+        if ans in ("1", "д", "да", "y", "yes"):
+            import publish
+            publish.publish()
+        else:
+            print("Хорошо. Чтобы выложить позже, запустите ОПУБЛИКОВАТЬ.cmd")
 
 
 if __name__ == "__main__":
