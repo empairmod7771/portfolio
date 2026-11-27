@@ -4,6 +4,25 @@
 // Формат JSON: строки в двойных кавычках, запятые между полями.
 window.WORKS = [
   {
+    "id": "11-27-myshlenie-bednyh-i-bogatyh-7-razlichij",
+    "title": "Мышление бедных и богатых 7 различий",
+    "desc": "",
+    "date": "2026-11-27",
+    "type": "long",
+    "video": "media/11-27-myshlenie-bednyh-i-bogatyh-7-razlichij/video.mp4",
+    "poster": "media/11-27-myshlenie-bednyh-i-bogatyh-7-razlichij/poster.jpg",
+    "preview": "media/11-27-myshlenie-bednyh-i-bogatyh-7-razlichij/preview.mp4",
+    "duration": 855,
+    "w": 1920,
+    "h": 1080,
+    "tags": [
+      "Сюжет и темп",
+      "Графика на весь экран",
+      "Цвет",
+      "Музыка и звук"
+    ]
+  },
+  {
     "id": "11-25-mask-posle-tretego-provala",
     "title": "Маск после третьего провала",
     "desc": "",
